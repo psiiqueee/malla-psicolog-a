@@ -2,9 +2,138 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Malla Psicología UCSH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malla Curricular Psicología UCSH</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 1rem;
+      background: #fff0f6;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #b3005b;
+    }
+    .semester {
+      margin-bottom: 2rem;
+    }
+    .semester h2 {
+      margin-bottom: 0.5rem;
+      color: #880045;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.5rem;
+    }
+    .card {
+      background: #ffcce6;
+      padding: 0.75rem;
+      border-radius: 0.75rem;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+      transition: opacity 0.2s, text-decoration 0.2s;
+      font-size: 0.9rem;
+    }
+    .card.done {
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+  </style>
 </head>
 <body>
-  <h1 style="color:deeppink; text-align:center;">¡Hola Amanda! 🌸 Aquí irá tu malla interactiva 💖</h1>
+  <h1>Malla Psicología UCSH 💖</h1>
+  <!-- Semestres con asignaturas -->
+  <div class="semester">
+    <h2>1º Semestre</h2>
+    <div class="grid">
+      <div class="card" onclick="toggleDone(0)">Historia de la Psicología</div>
+      <div class="card" onclick="toggleDone(1)">Fundamentos Filosóficos de la Psicología</div>
+      <div class="card" onclick="toggleDone(2)">Procesos Psicológicos</div>
+      <div class="card" onclick="toggleDone(3)">Psicobiología</div>
+      <div class="card" onclick="toggleDone(4)">Taller Bases del Desarrollo Profesional</div>
+      <div class="card" onclick="toggleDone(5)">Curso de Formación General</div>
+    </div>
+  </div>
+
+  <div class="semester">
+    <h2>2º Semestre</h2>
+    <div class="grid">
+      <div class="card" onclick="toggleDone(6)">Sociología</div>
+      <div class="card" onclick="toggleDone(7)">Psicología Social I</div>
+      <div class="card" onclick="toggleDone(8)">Ciclo Vital I</div>
+      <div class="card" onclick="toggleDone(9)">Neurociencias</div>
+      <div class="card" onclick="toggleDone(10)">Taller de Razonamiento y Argumentación</div>
+      <div class="card" onclick="toggleDone(11)">Curso de Formación General</div>
+    </div>
+  </div>
+
+  <div class="semester">
+    <h2>3º Semestre</h2>
+    <div class="grid">
+      <div class="card" onclick="toggleDone(12)">Psicología Social II</div>
+      <div class="card" onclick="toggleDone(13)">Ciclo Vital II</div>
+      <div class="card" onclick="toggleDone(14)">Paradigmas y Métodos de Investigación</div>
+      <div class="card" onclick="toggleDone(15)">Taller de Relaciones Humanas I</div>
+      <div class="card" onclick="toggleDone(16)">Curso de Formación General</div>
+    </div>
+  </div>
+
+  <div class="semester">
+    <h2>4º Semestre</h2>
+    <div class="grid">
+      <div class="card" onclick="toggleDone(17)">Psicología de la Personalidad</div>
+      <div class="card" onclick="toggleDone(18)">Metodologías Cuantitativas</div>
+      <div class="card" onclick="toggleDone(19)">Práctica Temprana</div>
+      <div class="card" onclick="toggleDone(20)">Taller de Relaciones Humanas II</div>
+      <div class="card" onclick="toggleDone(21)">Curso de Formación General</div>
+    </div>
+  </div>
+
+  <div class="semester">
+    <h2>5º al 10º Semestre</h2>
+    <div class="grid">
+      <div class="card" onclick="toggleDone(22)">Psicología Educacional</div>
+      <div class="card" onclick="toggleDone(23)">Psicopatología</div>
+      <div class="card" onclick="toggleDone(24)">Psicología Cognitiva</div>
+      <div class="card" onclick="toggleDone(25)">Psicología Psicoanalítica</div>
+      <div class="card" onclick="toggleDone(26)">Evaluación de la Personalidad</div>
+      <div class="card" onclick="toggleDone(27)">Psicología Humanista Existencial</div>
+      <div class="card" onclick="toggleDone(28)">Psicología Sistémica</div>
+      <div class="card" onclick="toggleDone(29)">Psiquiatría</div>
+      <div class="card" onclick="toggleDone(30)">Psicología del Trabajo</div>
+      <div class="card" onclick="toggleDone(31)">Técnicas Evaluación Infantil</div>
+      <div class="card" onclick="toggleDone(32)">Introducción a la Psicoterapia</div>
+      <div class="card" onclick="toggleDone(33)">Intervenciones Organizacionales</div>
+      <div class="card" onclick="toggleDone(34)">Estrategias de Análisis de Datos</div>
+      <div class="card" onclick="toggleDone(35)">Taller de Investigación</div>
+      <div class="card" onclick="toggleDone(36)">Seminario de Grado</div>
+      <div class="card" onclick="toggleDone(37)">Práctica Profesional</div>
+      <div class="card" onclick="toggleDone(38)">Ética Profesional</div>
+      <div class="card" onclick="toggleDone(39)">Taller Cuidado de Equipos</div>
+      <div class="card" onclick="toggleDone(40)">Innovación Psicosocial</div>
+      <div class="card" onclick="toggleDone(41)">Curso de Inserción Laboral</div>
+      <div class="card" onclick="toggleDone(42)">Optativo 1</div>
+      <div class="card" onclick="toggleDone(43)">Optativo 2</div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDone(i) {
+      const card = document.querySelectorAll('.card')[i];
+      card.classList.toggle('done');
+      localStorage.setItem('malla-'+i, card.classList.contains('done') ? 'done' : '');
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.card').forEach((el, i) => {
+        if (localStorage.getItem('malla-'+i) === 'done') {
+          el.classList.add('done');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
